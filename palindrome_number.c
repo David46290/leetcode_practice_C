@@ -56,7 +56,7 @@ bool isPalindrome2(int x)
 {
     // if 'x is negative' or 'x is not 0' and 'x can be divided by 10'
     // x is definitely not palindrome
-    if(x < 0 || x != 0 && x % 10 == 0 ) return false;
+    if((x < 0) || (x != 0) && (x % 10 == 0)) return false;
     int check = 0;
     // check will be the reversed version of 'the latter half of x'
      // and x will be 'the former half of x'
@@ -65,7 +65,7 @@ bool isPalindrome2(int x)
         check = check * 10 + x % 10; // add the last digit of x to check
         x /= 10; // remove the last digit from x
     }
-    return (x == check || x == check/10);
+    return ((x == check) || (x == check/10));
 }
 
 int main(void)
