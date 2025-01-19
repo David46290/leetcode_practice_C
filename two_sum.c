@@ -36,7 +36,7 @@ int main(void)
     for(int i=0; i<numsSize; i++)
     {
         printf("nums[%d] = ", i);
-        scanf("%d", nums+i);
+        scanf("%d", nums+i); // nums+i is the address of nums[i]
     }
 
     printf("nums = [");
